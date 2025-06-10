@@ -7,29 +7,41 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
+  <noscript>
+      <style>
+        #menu {
+          display: flex !important;
+        }
+        .hamburger {
+          display: none !important;
+        }
+      </style>
+  </noscript>
 <header>
-  <h1>KN Alive</h1>
   <nav>
-    <ul>
+    <a class="logo" href="index.html">KN Alive</a>
+    <ul id="menu">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="team.html">Team</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
   </nav>
 </header>
 
 <main>
-  <h2>xD</h2>
+  <h1>Alive – where AI meets medicine</h1>
   <p>
-    xdddddddddddddddddddddddddddddddddd
+    Sztuczna inteligencja i robotyka w służbie medycyny.
+Jesteśmy nowym kołem naukowym tworzonym przez studentów z pasją do nowoczesnych technologii. Naszym celem jest rozwijanie projektów łączących AI, robotykę i zastosowania medyczne – od analizy danych po prototypowanie urządzeń.
   </p>
 </main>
 
 <footer>
   &copy; 2025 KN ALIVE. All rights reserved.
 </footer>
+<script src="menu.js"></script>
 
 </body>
 </html>
